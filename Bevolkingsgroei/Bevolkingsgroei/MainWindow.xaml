@@ -1,0 +1,21 @@
+﻿<Window x:Class="Bevolkingsgroei.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Bevolkingsgroei"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Label Content="Land" HorizontalAlignment="Left" Margin="166,97,0,0" VerticalAlignment="Top"/>
+        <Label Content="Huidige bevolking:" HorizontalAlignment="Left" Margin="94,132,0,0" VerticalAlignment="Top"/>
+        <Label Content="Groeipercentage:" HorizontalAlignment="Left" Margin="102,179,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="landTextBox" HorizontalAlignment="Left" Margin="222,97,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="huidigeBevolkingTextBox" HorizontalAlignment="Left" Margin="222,141,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="groeipercentageTextBox" HorizontalAlignment="Left" Margin="222,183,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="resultTextBox" HorizontalAlignment="Left" Margin="92,237,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="439" Height="148" IsEnabled="False"/>
+        <Button x:Name="calculateButton" Content="Berekenen" HorizontalAlignment="Left" Margin="431,106,0,0" VerticalAlignment="Top" Width="100" Height="20" IsDefault="True" Click="calculateButton_Click"/>
+        <Button x:Name="clearButton" Content="Wissen" HorizontalAlignment="Left" Margin="431,142,0,0" VerticalAlignment="Top" Width="100" Height="20" Click="clearButton_Click"/>
+        <Button x:Name="closeButton" Content="Afsluiten" HorizontalAlignment="Left" Margin="431,179,0,0" VerticalAlignment="Top" Width="100" Height="20" Click="closeButton_Click" IsCancel="True"/>
+    </Grid>
+</Window>
